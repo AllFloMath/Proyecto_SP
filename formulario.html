@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans&family=Odibee+Sans&family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans&family=Odibee+Sans&family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        
+        }
+        nav a.bt1{
+
+            text-decoration: none;
+            text-align: center;
+            background-color: #33B5E5;
+            color: white;
+            
+            font-size: 1.4em;
+            display: inline-block;
+            padding:10px 15px;
+            border-radius: 15px;
+            
+            width: 200px;
+        
+        }
+        nav a.f{padding-right: 10%;
+            
+        }
+    
+  
+        
+        .barnav a.bt1:hover{
+            padding: 0.5em  1rem;
+            background-color: #1b262c;
+            border-radius: 15px;
+            transition: all 0.4s linear;
+            
+        }
+        .barnav{
+            background-color: white;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+
+            
+            margin-right: auto;
+        }
+
+        li{
+        display: inline-block;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+        }
+        @media only screen and (max-width: 600px)  {
+            a{
+                width: 48%;
+            
+            }
+        }
+
+
+
+
+        body{
+            background-color: white;
+            color:#1b262c;
+            
+            height: 100vh;
+        }
+        [class*='col-']{
+          float:left;
+          padding: 15px;      
+        }
+        .row::after{
+          content: '';
+          display: table;
+          clear: both;
+        }
+        /*celulares*/
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}  
+        .container{
+            height: 120vh;
+            max-width: 90vw;
+          }
+       
+        /*tablet*/
+        @media only screen and (min-width:432px){
+          .col-m-1{width: 8.33%;}
+          .col-m-2{width: 16.66%;}
+          .col-m-3{width: 25%;}
+          .col-m-4{width: 33.33%;}
+          .col-m-5{width: 41.66%;}
+          .col-m-6{width: 50%;}
+          .col-m-7{width: 58.33%;}
+          .col-m-8{width: 66.66%;}
+          .col-m-9{width: 75%;}
+          .col-m-10{width: 83.33%;}
+          .col-m-11{width: 91.66%;}
+          .col-m-12{width: 100%;}  
+          .container{
+            height: 90vh;
+            max-width: 90vw;
+          }
+          
+        }
+        /*pc*/
+        @media only screen and (min-width:770px){
+          .col-g-1{width: 8.33%;}
+          .col-g-2{width: 16.66%;}
+          .col-g-3{width: 25%;}
+          .col-g-4{width: 33.33%;}
+          .col-g-5{width: 41.66%;}
+          .col-g-6{width: 50%;}
+          .col-g-7{width: 58.33%;}
+          .col-g-8{width: 66.66%;}
+          .col-g-9{width: 75%;}
+          .col-g-10{width: 83.33%;}
+          .col-g-11{width: 91.66%;}
+          .col-g-12{width: 100%;} 
+          .container{
+            height: 600px;
+            max-width: 900px;
+          }
+          .info{
+            height: 600px;
+          }
+        }
+
+        h1{
+            text-align: center;
+            font-size: 3em;
+            
+        }
+        
+        .container{ 
+           padding:0;
+            background-color: rgb(233, 233, 233);
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 20px rgba(200,200,200,0.8);
+           
+        }
+        input, textarea{
+            width: 100%;
+        }
+        input[type=text],input[type=email], textarea{
+            background-color: transparent;
+            border:none;
+            outline:none;
+            color:black;
+            border-bottom: 2px solid black;
+            padding:10px 10px;
+            font-size: 1.3em;
+        }
+        input[type=submit] {
+            background-color:#33B5E5 ;
+            color:white;
+            padding:10px 10px;
+            text-transform: uppercase;
+            border:none;
+            outline: none;
+            cursor:pointer;
+            border-radius: 5px;
+
+        }
+        input[type=submit]:hover{
+            background-color:#1b262c;
+            transition: all 0.4s linear;
+        }
+        .info{
+            background-color: #1b262c;
+           
+        }
+        h1{
+            color: black;
+        }
+        h2{
+            ;
+        }
+        div.info p{
+            color: white;
+        }
+        div.info h3{
+            color: white;
+        }
+        @media only screen and (max-width: 750px)  {
+        
+        div a.bt1{
+            width: 100%;
+            margin-left: 0px;
+            
+        }
+        div.barnav li{
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+        font-family: 'Odibee Sans';
+        } 
+        .bt1{
+            font-family: 'Odibee Sans';
+        }
+        
+        
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="barnav" align="center">
+            <a href="index.html" class="logo" width="400px"> <img src="turtletech.png" width="40%" >   </a>
+            <ul>
+              
+                <li><a href="formulario.html" class="bt1">Contáctanos</a></li>    
+                <li><a href="ubicacion.html" class="bt1">Nuestas tiendas </a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <h1>Contáctanos</h1>
+    <div class="container">
+        <div class="col-g-8 col-m-12">
+            <h2>Datos:</h2>
+            <div class="col-g-6 col-m-6 col-12">
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="col-g-6 col-m-6 col-12">
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="mail" name="mail">
+            </div>
+            <div class="col-g-6 col-m-6 col-12">
+                <label for="phone">Número de teléfono:</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="col-g-6 col-m-6 col-12">
+                <label for="affair">Asunto:</label>
+                <input type="text" id="affair" name="affair">
+            </div>
+            <div class="col-g-12 col-m-12 col-12">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows=5></textarea>
+            </div>
+            <div class="col-g-12 col-m-12 col-12">
+                <input type="submit" value="Enviar &rarr;">
+            </div>
+        </div>
+        <div class="col-g-4 col-m-12 col-12 info">
+           <h3>Más Información</h3>
+           <p><i class="fas fa-map-marker-alt"></i>Mall las Cascadas</p>
+           <p><i class="fas fa-phone"></i> (+504) 9999-9999</p>
+           <p><i class="fas fa-envelope-open-text"></i> info@turtletech.com</p>
+           <p>Somos una empresa dedicada a ofrecer los mejores y más nuevos productos de tecnología. Si tienes alguna consulta que quieras hacernos, no dudes en preguntar. Recuerda que siempre estamos en la disposicón para ayudarte</p>
+           <p>turtletech.com</p>
+        </div>
+    </div>
+</body>
+</html>

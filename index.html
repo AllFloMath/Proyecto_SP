@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans&family=Odibee+Sans&family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
+
+
+    <title>TurtleTech</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        
+      }
+    h3{
+      font-family: 'Odibee Sans';  
+    }
+    h2{
+      font-family: 'Odibee Sans'; 
+    }
+    
+    
+    nav a.bt1{
+        text-decoration: none;
+        text-align: center;
+        background-color: #33B5E5;
+        color: white;
+        
+        font-size: 1.4em;
+        display: inline-block;
+        padding:10px 15px;
+        border-radius: 15px;
+        width: 200px;
+        margin-bottom: 5px;
+        font-family: 'Odibee Sans'; 
+        
+    }
+    nav a.bt2{
+        text-decoration: none;
+        text-align: center;
+        background-color: #511281;
+        color: white;
+        font-family: 'Odibee Sans'; 
+        font-size: 1.4em;
+        display: inline-block;
+        padding:10px 15px;
+        width: 180px;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .produc a:hover{  
+        padding: 0.5em  1rem;
+        background-color: #33B5E5;
+        border-radius: 15px;
+        transition: all 0.4s linear;
+    }
+    p{
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+    
+  
+   
+    .barnav a.bt1:hover{
+            padding: 0.5em  1rem;
+            background-color: #1b262c;
+            border-radius: 15px;
+            transition: all 0.4s linear;
+        }
+    
+   
+    div.cuerpo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 83.3%
+    }
+    img.publi{
+         width: 100%;
+         height: 10%;
+         border-radius: 15px;
+         padding-bottom: 5px;
+         padding-top: 5px;
+    }
+    h2{
+        text-align: center;
+        position: relative;
+        clear: both;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    h2::before{
+        content: '';
+        width: 50%;
+        height: 5px;
+        background-color:#33B5E5;
+        position: absolute;
+        top: 115%;
+        left: calc(25%);
+
+    }
+    li{
+        display: inline-block;
+        padding: 0;
+    }
+    
+    ul{
+            margin: 0;
+            padding: 0;
+        }
+    /* Imágenes de Ofertas */
+    div.img {
+    
+    border: 1px solid #ccc;
+    float: left;
+    width: 25%;
+    }
+
+    div.img:hover {
+        display: block;
+        color: white;
+        background-color: #33B5E5;
+        border: 1px solid #777;
+        transition: all 0.4s linear;
+        opacity: 1;
+    }
+    
+    div.img img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+
+    .antes {
+    text-decoration:line-through;
+    color: red;
+    }
+    .ahora{
+        color: #511281;
+        font-weight: bold;
+    }
+    .hide {
+        color: white;
+        }
+
+    a.ag{
+        text-decoration: none;
+        color: white;
+        opacity: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    a.ag:hover{
+        text-decoration: none;
+        color: white;
+        opacity: 1;
+ 
+        transition: all 0.1s linear;
+    }
+
+    nav.servicios ul{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin: 0;
+        padding: 0;
+        padding-bottom: auto;
+    }
+    nav.servicios li{
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 24%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+        
+     }
+     nav.servicios img{
+         width: 100%;
+         height: auto;
+         border-radius: 10px;
+     }
+     h6{
+         text-align: center;
+         font-size: 45px;
+         margin: 0;
+     }
+     h3{
+         text-align: center;
+     }
+     nav.servicios li:hover {
+        font-size: 20Px;
+        color: #33B5E5;
+        transition: all 0.4s linear;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        } 
+
+
+
+    @media only screen and (max-width: 1140px) {
+        nav a.bt2{
+            width: 300px;
+            margin-left: 0px;
+        }
+        nav{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+
+    }
+
+
+        /* Teléfono */
+    @media only screen and (max-width: 800px)  {
+        div.img {
+        
+        border: 1px solid #ccc;
+        float: left;
+        
+        width: 46%;
+        }
+        nav.servicios li{
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 45%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+        
+        } 
+        nav.produc li{
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+        
+        } 
+
+        div.barnav li{
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+        
+        } 
+        nav{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 5px;
+        }
+        nav a.bt1{
+            width: 100%;
+            margin-left: 0px;
+
+        }
+        nav a.bt2{
+            width: 100%;
+            margin-left: 0px
+            
+        }
+        
+        
+    }
+    
+</style>
+<body>
+    <nav>
+        <div class="barnav" align="center">
+            <a href="index.html" > <img src="turtletech.png" width="40%" >   </a>
+            <ul>
+              
+                <li><a href="formulario.html" class="bt1">Contáctanos</a></>    
+                <li><a href="ubicacion.html" class="bt1">Nuestas tiendas </a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <img src="publi1.png" width="83.3%%" class="publi">
+    <div class="cuerpo">
+        <div align="center" >
+            <nav class="produc" align="center" >
+                <ul>
+                    <li> <a href="escritorio.html" class="bt2">PC's de Escritorio</a></li>
+                    <li> <a href="lap.html" class="bt2">Laptops</a></li>
+                    <li> <a href="cel.html" class="bt2">Smartphones</a></li>
+                    <li> <a href="ipads.html" class="bt2">Tablets</a></li>
+                    <li> <a href="videojuegos.html" class="bt2">Videojuegos</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+        <h2>Ofertas</h2>
+        <div class="ofertas" align="center">
+            <div class="img">
+                <img src="Ofertas/hp1.png" alt="Laptop" >
+                <div class="desc">
+                    <p>HP 14</p>
+                    <p class="antes">Antes:13,700 L</p>
+                    <p class="ahora">Ahora:10,000 L </p>
+                    <a href="#" class="ag">
+                        <span class="material-icons">shopping_cart</span>
+                        Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="Ofertas/hp2.png" alt="Laptop" >
+                <div class="desc">
+                    <p>HP Laptop 14-dq1001la</p>
+                    <p class="antes">Antes:14,300 L</p>
+                    <p class="ahora">Ahora:11,000 </p>
+                    <a href="#" class="ag">
+                        <span class="material-icons">shopping_cart</span>
+                        Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="Ofertas/iphone12.png" alt="Laptop" >
+                <div class="desc">
+                    <p>iPhone 12</p>
+                    <p class="antes">Antes:28,995 L</p>
+                    <p class="ahora">Ahora:25,000 L </p>
+                    <a href="#" class="ag">
+                        <span class="material-icons">shopping_cart</span>
+                        Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="Ofertas/mac.png" alt="Laptop" >
+                <div class="desc">
+                    <p>iMac</p>
+                    <p class="antes">Antes:34,850 L</p>
+                    <p class="ahora">Ahora:29,000 L </p>
+                    <a href="#" class="ag">
+                        <span class="material-icons">shopping_cart</span>
+                        Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="Ofertas/dell.png" alt="Laptop" >
+                <div class="desc">
+                    <p>Dell XPS 13 2019</p>
+                    <p class="antes">Antes:10,700 L</p>
+                    <p class="ahora">Ahora:8,500 L </p>
+                    <a href="#" class="ag">
+                        <span class="material-icons">shopping_cart</span>
+                        Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="Ofertas/huawei.png" alt="Laptop" >
+                <div class="desc">
+                    <p>Huawei Y7A </p>
+                    <p class="antes">Antes:6,695 L</p>
+                    <p class="ahora">Ahora:5,000 L </p>
+                    <a href="#" class="ag">
+                        <span class="material-icons">shopping_cart</span>
+                        Agregar al Carrito</a>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="Ofertas/doom.png" alt="Laptop" >
+                <div class="desc">
+                    <p>Doom Eternal para PS4</p>
+                    <p class="antes">Antes:1,200 L</p>
+                    <p class="ahora">Ahora:800 L </p>
+                    <a href="#" class="ag">
+                        <span class="material-icons">shopping_cart</span>
+                        Agregar al Carrito</a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="Ofertas/FFVII.png" alt="Laptop" >
+                <div class="desc">
+                    <p>FFVII para PS5</p>
+                    <p class="antes">Antes:2,000 L</p>
+                    <p class="ahora">Ahora:1,200 L </p>
+                    <a href="#" class="ag">
+                        <span class="material-icons">shopping_cart</span>
+                        Agregar al Carrito</a>
+                </div>
+            </div>
+        </div>
+        <img src="publi2.png" width="83.3%%" class="publi">
+        <h2>Servicios</h2>
+        
+        <nav class="servicios" >
+            <ul>
+                <li> 
+                    <h6><span class="material-icons">print</span></h6>
+                    <h3>Taller de Impresoras</h3>
+                    <img src="servicios/impresora.png">
+                    
+                </li>
+                <li>
+
+                    <h6><span class="material-icons">desktop_windows</span></h6>
+                    <h3>Taller de Escritorio</h3>
+                    <img src="servicios/desktop.png">
+                    
+                      
+                </li>
+                <li>
+                    <h6><span class="material-icons">laptop</span></h6>
+                    <h3>Taller de Laptops</h3>
+                    <img src="servicios/laptop.png">
+                    
+                </li>
+                <li>
+                    <h6><span class="material-icons">build</span></h6>
+                    <h3>Reparaciones</h3>
+                    <img src="servicios/reparar.png">
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</body>
+</html>

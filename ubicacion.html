@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras tiendas</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        nav{
+            padding-bottom: 30px;
+        }
+        nav a.bt1{
+
+            text-decoration: none;
+            text-align: center;
+            background-color: #33B5E5;
+            color: white;
+            
+            font-size: 1.4em;
+            display: inline-block;
+            padding:10px 15px;
+            border-radius: 15px;
+            width: 200px;
+            margin-bottom: 5px;
+            font-family: 'Odibee Sans'; 
+        
+        }
+
+        nav img{
+            background-color: white;
+            width: 175px;
+        }
+
+        .barnav a.bt1:hover{
+            padding: 0.5em  1rem;
+            background-color: #1b262c;
+            border-radius: 15px;
+            transition: all 0.4s linear;
+        }
+
+
+        li{
+            display: inline-block;
+            padding: 0;
+        }
+    
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        .tienda{
+            float: left;
+            width: 33.33%;
+            height: 200px;
+            padding-right: 16px;
+            padding-bottom: 16px ;
+            margin-left: auto;
+            margin-right: auto;
+            
+            
+        }
+        img.tien{
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 7px black;
+        }
+
+        .gal{
+            background-color:#1b262c ;
+        }
+
+        h1{
+            font-family: sans-serif;
+        }
+
+        .ti{
+            
+            padding-left: 20px;
+        }
+
+        @media only screen and (min-width:971px){
+          .col-g-1{width: 8.33%;}
+          .col-g-2{width: 16.66%;}
+          .col-g-3{width: 25%;}
+          .col-g-4{width: 33.33%;}
+          .col-g-5{width: 41.66%;}
+          .col-g-6{width: 50%;}
+          .col-g-7{width: 58.33%;}
+          .col-g-8{width: 66.66%;}
+          .col-g-9{width: 75%;}
+          .col-g-10{width: 83.33%;}
+          .col-g-11{width: 91.66%;}
+          .col-g-12{width: 100%;}
+          
+        }
+        
+        @media only screen and (max-width:970px){
+          .col-m-1{width: 8.33%;}
+          .col-m-2{width: 16.66%;}
+          .col-m-3{width: 25%;}
+          .col-m-4{width: 33.33%;}
+          .col-m-5{width: 41.66%;}
+          .col-m-6{width: 50%;}
+          .col-m-7{width: 58.33%;}
+          .col-m-8{width: 66.66%;}
+          .col-m-9{width: 75%;}
+          .col-m-10{width: 83.33%;}
+          .col-m-11{width: 91.66%;}
+          .col-m-12{width: 100%;}
+          
+        }
+
+        @media only screen and (max-width:600px){
+          .col-1{width: 8.33%;}
+          .col-2{width: 16.66%;}
+          .col-3{width: 25%;}
+          .col-4{width: 33.33%;}
+          .col-5{width: 41.66%;}
+          .col-6{width: 50%;}
+          .col-7{width: 58.33%;}
+          .col-8{width: 66.66%;}
+          .col-9{width: 75%;}
+          .col-10{width: 83.33%;}
+          .col-11{width: 91.66%;}
+          .col-12{width: 100%;}
+          
+        }
+
+        .ub1{
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 25px;
+            width: 90%;
+            display: inline-block;
+        }
+        .ub2{
+            padding-left: 25px ;
+            width: 90%;
+            display: inline-block;
+            padding-top: 30px;
+        }
+
+        iframe{
+            box-shadow: 0px 0px 10px black;
+            
+        }
+
+        .container{
+            width: 83%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .espacio{
+            height: 50px;
+            overflow: hidden;
+            border: 1px solid white;
+        }
+
+        
+
+        .info{
+            background-color: #1b262c;
+            padding: 10px;
+            display: inline-block;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+           
+        }
+        h1{
+            color: black;
+        }
+        div.info p{
+            color: white;
+        }
+        div.info h3{
+            color: white;
+        }
+        
+        @media only screen and (max-width: 750px)  {
+        
+        div a.bt1{
+            width: 100%;
+            margin-left: 0px;
+        }
+        div.barnav li{
+            
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+        
+        }
+
+        }
+        img.logo{
+            width: 40%;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="barnav" align="center">
+            <a href="index.html" class="logo"> <img src="turtletech.png" class="logo" width="40%">   </a>
+            <ul>
+              
+                 
+                <li><a href="formulario.html" class="bt1">Contáctanos</a></>    
+                <li><a href="#" class="bt1">Nuestas tiendas </a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+   <div class="container" align="center">
+        <div class="tienda col-12 col-m-6">
+            <img src="tiendas/img1.jpeg" class="tien">
+        </div>
+        <div class="tienda col-12 col-m-6">
+            <img src="tiendas/img2.jpeg" class="tien">
+        </div>
+        <div class="tienda col-12 col-m-6">
+            <img src="tiendas/img3.jpeg" class="tien">
+        </div>
+
+            
+
+        <div class="tienda col-12 col-m-6">
+            <img src="tiendas/img4.jpeg" class="tien">
+        </div>
+        <div class="tienda col-12 col-m-6">
+            <img src="tiendas/img5.jpeg" class="tien">
+        </div>
+        <div class="tienda col-12 col-m-6">
+            <img src="tiendas/img6.jpeg" class="tien">
+        </div>
+
+        <div class="espacio"></div>
+
+        <div class="ti">
+            <h1><i class="fas fa-map-marker-alt"></i> Encuéntranos aquí:</h1>
+        </div>
+
+        <div class="ub1" align="center">
+            <div class="frame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5463.857981059645!2d-87.6411115786375!3d14.45416929950702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f65858cd98a29e5%3A0x913b590644b51db3!2sMall%20Premier!5e0!3m2!1ses-419!2shn!4v1623357311278!5m2!1ses-419!2shn" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="info">
+                <h3>Más info.</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Mall Premier</p>
+                <p><i class="fas fa-phone"></i> (+504) 8888-8888</p>
+                <p><i class="fas fa-envelope-open-text"></i> info@turtletech.com</p>
+                <p>Para encontrarnos en el Mall Premier, busca cerca de la entrada a la par de McDonalds y Expresso Americano, nuestros empleados te atenderán con mucha amabilidad. Visítanos, y no olvides de darnos tu opinión acerca de nuestras tiendas.</p>
+                <p>turtletech.com</p>
+            </div>
+        </div>
+
+
+        <div class="ub2">
+            <div class="frame" align="center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991845.3511791066!2d-87.50032629588024!3d13.815249566168882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6fbd3643daeaeb%3A0x36b77b53b023a7ab!2sCascadas%20Mall!5e0!3m2!1ses-419!2shn!4v1623357522733!5m2!1ses-419!2shn" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="info">
+                <h3>Más info.</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Cascadas Mall</p>
+                <p><i class="fas fa-phone"></i> (+504) 7777-7777</p>
+                <p><i class="fas fa-envelope-open-text"></i> info@turtletech.com</p>
+                <p>Para encontrarnos en Cascadas Mall, busca cerca de la salida a la par de Burger King y El Palacio de los Niños, nuestros empleados te atenderán con mucha amabilidad. Visítanos, y no olvides de darnos tu opinión acerca de nuestras tiendas.</p>
+                <p>turtletech.com</p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans&family=Odibee+Sans&family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
+    <title>Videojuegos</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            font-family: 'Odibee Sans', cursive;
+            font-size: 55px;
+            text-align: center;
+        }
+        div.cuerpo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 83.3%
+        }
+        [class*='col-']{
+          float:left;
+          padding: 15px;
+          width: 100%;
+        }
+        [class*='col-']{
+            float:left;
+            padding: 15px;
+        }
+        .borde_in_p{
+            border-bottom: 3px solid rgb(16, 80, 153);
+        }
+        .borde_in{
+            border-bottom: 1px solid rgb(127, 178, 236);
+        }
+        .img1{
+            width: 200px;
+            
+            }
+        .img2{
+            width: 170px;
+            margin-left: -10px;
+            margin-top: 40px;
+            }
+        .img3{
+            width: 170px;
+            margin-left: -15px;
+            margin-top: 13px;
+            }
+        .img4{
+            width: 170px;
+            margin-left: -15px;
+            margin-top: 23px;
+            }
+        .img5{
+            width:180px;
+            margin-left: -15px;
+            margin-top: 18px;
+            }
+        .img6{
+            width: 170px;
+            margin-left: -15px;
+            margin-top: 26px;
+            }
+        .img7{
+            width: 180px;
+            margin-left: -15px;
+            margin-top: 23px;
+            }
+        .img8{
+            width: 200px;
+            margin-left: -25px;
+            margin-top: 17px;
+            }
+        .img9{
+            width: 150px;
+            margin-left: -5px;
+            margin-top: 8px;
+            }
+        .img10{
+            width: 180px;
+            margin-left: -30px;
+            margin-top: 5px;
+            }
+        h3{
+            float: left;
+        }
+        h4{
+            color: #511281;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .precio{
+            float: right;
+            margin: -50px 115px -15px -25px;
+            color: red;
+            font-family: 'Do Hyeon', sans-serif;
+        }
+        a{
+            background-color: #33B5E5;
+            padding: 7px 25px 7px 25px;
+            border-radius: 20px 20px 20px 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin: -15px 25px -15px 25px;
+        }
+        ul{
+            list-style-type: none;
+            margin-left:110px;
+            margin-right: 280px;
+            padding-bottom: 4px;
+            padding-top: 4px;
+            font-family: 'Noto Sans', sans-serif;
+            text-align: justify;
+            color: #1b262c;
+        }
+        li{
+            margin-bottom: 12px;
+        }
+        .material-icons{
+            font-size: 20px;
+        }
+        .espaciado{
+            color: blue;
+        }
+        .e1{
+            float: right;
+        }
+        a:hover{
+            background-color: rgb(0, 0, 170);
+        }
+        @media only screen and (max-width:460px){
+            .col-m-1{width: 8.33%;}
+            .col-m-2{width: 16.66%;}
+            .col-m-3{width: 25%;}
+            .col-m-4{width: 33.33%;}
+            .col-m-5{width: 41.66%;}
+            .col-m-6{width: 50%;}
+            .col-m-7{width: 58.33%;}
+            .col-m-8{width: 66.66%;}
+            .col-m-9{width: 75%;}
+            .col-m-10{width: 83.33%;}
+            .col-m-11{width: 91.66%;}
+            .col-m-12{width: 100%;}
+            .compra{
+                margin-right: 225px;
+                margin-bottom: 50px;
+            }
+            .precio{
+                float: right;
+                margin: -100px 10px -15px -25px;
+                color: red;
+            }
+            .ul2{
+                list-style-type: none;
+                margin-left:-10px;
+                margin-right: 0px;
+                padding-bottom: 4px;
+                padding-top: 4px;
+            }
+            h3{
+                float: left;
+                text-align: center;
+            }
+            a{
+                background-color: blue;
+                padding: 7px 25px 7px 25px;
+                border-radius: 20px 20px 20px 20px;
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                margin: -15px 25px -15px 25px;
+            }
+        }
+        @media only screen and (max-width:768px){
+            .col-g-1{width: 8.33%;}
+            .col-g-2{width: 16.66%;}
+            .col-g-3{width: 25%;}
+            .col-g-4{width: 33.33%;}
+            .col-g-5{width: 41.66%;}
+            .col-g-6{width: 50%;}
+            .col-g-7{width: 58.33%;}
+            .col-g-8{width: 66.66%;}
+            .col-g-9{width: 75%;}
+            .col-g-10{width: 83.33%;}
+            .col-g-11{width: 91.66%;}
+            .col-g-12{width: 100%;}
+            .esconder{
+                display: none;
+            }
+            .precio{
+            float: right;
+            margin: -10px 10px -15px -25px;
+            color: red;
+            }
+            ul{
+            list-style-type: none;
+            margin-left:-10px;
+            margin-right: 215px;
+            padding-bottom: 4px;
+            padding-top: 4px;
+            }
+            h3{
+            float: left;
+            text-align: center;
+            }
+        }
+        @media only screen and (min-width:1024px){
+            .col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83.33%;}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+        }
+
+
+        /* Esto es la barra de navegación. No tocar */
+
+
+        
+       
+        nav a.logo{
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            background-color: white;
+            width: 100%;
+            display: inline-block;
+
+        }
+        nav a.bt1{
+            text-decoration: none;
+            text-align: center;
+            background-color: #33B5E5;
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.4em;
+            display: inline-block;
+            padding:3%;
+            margin-left: 0px;
+            border-radius: 15px;
+            width: 200px;
+            margin-bottom: 5px;
+            font-family: 'Odibee Sans'; 
+            
+        }
+        ul.menu{
+            margin-left: auto;
+            margin-right: auto;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: auto;
+            right: auto;
+            text-align: center;
+            }
+        li.menu{
+            
+            display: inline-block;
+            padding: 0;
+        }
+
+        div img.logo {
+        
+            border: 1px solid #ccc;
+            float: left;
+            
+            width: 100%;
+        }
+        .barnav a.bt1:hover{
+            
+            background-color: #1b262c;
+            border-radius: 15px;
+            transition: all 0.4s linear;
+        }
+
+        @media only screen and (max-width: 800px)  {
+        div img.logo {
+        
+            border: 1px solid #ccc;
+            float: left;
+            
+            width: 46%;
+        }
+
+        div.barnav li{
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 14px;
+        
+        }
+        nav.menu{
+            width: 100%;
+            
+        }
+        nav.menu a.bt1{
+            width: 100%;
+                
+
+        }
+       
+        
+        
+    }
+        div.barnav li{
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-bottom: 14px;
+            }
+    
+    
+    nav.menu img{
+        border-color:white;
+        width: 40%;
+        height: auto;
+        margin-left: 30%;
+        
+    }
+    
+    
+    
+    /* Aquí termina la barra de navegación. No tocar*/
+    </style>
+</head>
+<body>
+
+    <nav class="menu"width="100%" align="center" >
+        <div class="barnav" >
+            <u class="log" >
+                <li>
+                    <a href="index.html" class="logo"> <img src="turtletech.png" width="400px" class="logo">   </a>
+                </li>
+            </u>
+            <ul class="menu"  width="100%" align="center" >
+              
+                
+                <li class="menu"><a href="formulario.html" class="bt1">Contáctanos</a></>    
+                <li class="menu"><a href="ubicacion.html" class="bt1">Nuestas tiendas </a></li>
+                
+            </ul>
+        </div>
+       
+    </nav>
+    <div>
+        <div></div>
+        <div class="cuerpo">
+            <div class="borde_in_p"><h1>Video Juegos</h1></div>
+        <div class="borde_in">
+        <h3 class="col-2 col-m-12"><img src="games/games1.png" class="img1"></h3>
+        <h4>Nintendo Switch Lite color Amarillo</h4>
+        <h2 class="precio">L. 8,595.00</h2>
+        <div class="compra"><a href="#" class="e1"><span class="material-icons">
+            shopping_cart
+            </span><span class="espaciado esconder">_</span><span class="esconder">Agregar <span class="esconder2">al Carrito</span></span>
+            </a>
+        </div>    
+        <ul class="ul2">
+            <li><span class="material-icons">
+                done
+                </span>Calidad de Gráficos - 720p</li>
+                <li><span class="material-icons">
+                done
+                </span>Alto Rango Dinámico - No</li>
+                <li><span class="material-icons">
+                    done
+                </span>Número de Salida HDMI - 0</li>
+                <li><span class="material-icons">
+                done
+                </span>Número de Puertos USB - 0</li>
+        </ul>
+        </div>
+        <div class="borde_in">
+        <h3 class="col-2 col-m-12"><img src="games/games2.png" class="img1"></h3>
+        <h4>PlayStation 4 Pro 1TB con Pase de Juego Fortnite</h4>
+        <h2 class="precio">L. 18,994.99</h2>
+        <div class="compra"><a href="#" class="e1"><span class="material-icons">
+            shopping_cart
+            </span><span class="espaciado esconder">_</span><span class="esconder">Agregar <span class="esconder2">al Carrito</span></span>
+            </a>
+        </div>    
+        <ul class="ul2">
+            <li><span class="material-icons">
+                done
+                </span> Alto Rango Dinámico - Si</li>
+                <li><span class="material-icons">
+                done
+                </span>Capacidad Disco Duro - 1 TB</li>
+                <li><span class="material-icons">
+                done
+                </span>Bluetooth Habilitado - Si </li>
+                <li><span class="material-icons">
+                done
+                </span>Número de Salida HDMI - 1</li>
+                
+        </ul>
+        </div>
+        <div class="borde_in">
+        <h3 class="col-2 col-m-12"><img src="games/games3.png" class="img1"></h3>
+        <h4>PlayStation 4 Hits Bundle 5</h4>
+        <h2 class="precio">L. 13,995.00</h2>
+        <div class="compra"><a href="#" class="e1"><span class="material-icons">
+            shopping_cart
+            </span><span class="espaciado esconder">_</span><span class="esconder">Agregar <span class="esconder2">al Carrito</span></span>
+            </a>
+        </div>    
+        <ul class="ul2">
+                <li><span class="material-icons">
+                done
+                </span>Calidad de Gráficos - 1080p</li>
+                <li><span class="material-icons">
+                done
+                </span>Alto Rango Dinámico - Si</li>
+                <li><span class="material-icons">
+                done
+                </span>Capacidad Disco Duro - 1 TB</li>
+                <li><span class="material-icons">
+                done
+                </span>Bluetooth Habilitado - Si</li>
+
+        </ul>
+        </div>
+        <div class="borde_in">
+        <h3 class="col-2 col-m-12"><img src="games/games4.png" class="img1"></h3>
+        <h4>Consola PS4 con 3 Juegos MEGAPACK 6</h4>
+        <h2 class="precio">L. 14,995.00</h2>
+        <div class="compra"><a href="#" class="e1"><span class="material-icons">
+            shopping_cart
+            </span><span class="espaciado esconder">_</span><span class="esconder">Agregar <span class="esconder2">al Carrito</span></span>
+            </a>
+        </div>    
+        <ul class="ul2">
+            <li><span class="material-icons">
+                done
+                </span>Calidad de Gráficos - 1080p</li>
+            <li><span class="material-icons">
+                done
+                </span>Alto Rango Dinámico - Si</li>
+            <li><span class="material-icons">
+                done
+                </span>Capacidad Disco Duro - 1 TB</li>
+            <li><span class="material-icons">
+                done
+                </span>Bluetooth Habilitado - Si</li>
+
+        </ul>
+        </div>
+        <div class="borde_in">
+        <h3 class="col-2 col-m-12"><img src="games/games5.png" class="img1"></h3>
+        <h4>PlayStation 4 Slim de 1TB Bundle con FIFA 2020 Sony</h4>
+        <h2 class="precio">L. 13,995.00</h2>
+        <div class="compra"><a href="#" class="e1"><span class="material-icons">
+            shopping_cart
+            </span><span class="espaciado esconder">_</span><span class="esconder">Agregar <span class="esconder2">al Carrito</span></span>
+            </a>
+        </div>    
+        <ul class="ul2">
+            <li><span class="material-icons">
+                done
+                </span> Alto Rango Dinámico - Si</li>
+                <li><span class="material-icons">
+                done
+                </span>Capacidad Disco Duro - 1 TB</li>
+            <li><span class="material-icons">
+                done
+                </span>Bluetooth Habilitado - Si</li>
+            <li><span class="material-icons">
+                done
+                </span>Número de Salida HDMI - 1</li>
+
+        </ul>
+        </div>
+        <div class="borde_in">
+        <h3 class="col-2 col-m-12"><img src="games/games6.png" class="img1"></h3>
+        <h4>Nintendo Switch Lite color Rojo</h4>
+        <h2 class="precio">L. 8,595.00</h2>
+        <div class="compra"><a href="#" class="e1"><span class="material-icons">
+            shopping_cart
+            </span><span class="espaciado esconder">_</span><span class="esconder">Agregar <span class="esconder2">al Carrito</span></span>
+            </a>
+        </div>    
+        <ul class="ul2">
+            <li><span class="material-icons">
+                done
+                </span>Calidad de Gráficos - 720p</li>
+                <li><span class="material-icons">
+                done
+                </span>Alto Rango Dinámico - No</li>
+                <li><span class="material-icons">
+                    done
+                </span>Número de Salida HDMI - 0</li>
+                <li><span class="material-icons">
+                done
+                </span>Número de Puertos USB - 0</li>
+        </ul>
+        </div>
+        <div class="borde_in">
+        <h3 class="col-2 col-m-12"><img src="games/games7.png" class="img1"></h3>
+        <h4>PlayStation 4 Hits Bundle 5 Verde Militar</h4>
+        <h2 class="precio">L. 13,995.00</h2>
+        <div class="compra"><a href="#" class="e1"><span class="material-icons">
+            shopping_cart
+            </span><span class="espaciado esconder">_</span><span class="esconder">Agregar <span class="esconder2">al Carrito</span></span>
+            </a>
+        </div>    
+        <ul class="ul2">
+                <li><span class="material-icons">
+                done
+                </span>Calidad de Gráficos - 1080p</li>
+                <li><span class="material-icons">
+                done
+                </span>Alto Rango Dinámico - Si</li>
+                <li><span class="material-icons">
+                done
+                </span>Capacidad Disco Duro - 1 TB</li>
+                <li><span class="material-icons">
+                done
+                </span>Bluetooth Habilitado - Si</li>
+
+        </ul>
+        </div>
+        <div class="borde_in">
+        <h3 class="col-2 col-m-12"><img src="games/games8.png" class="img1"></h3>
+        <h4>Sony Control Dualshock 4 Blanco</h4>
+        <h2 class="precio">L. 2,995.00</h2>
+        <div class="compra"><a href="#" class="e1"><span class="material-icons">
+            shopping_cart
+            </span><span class="espaciado esconder">_</span><span class="esconder">Agregar <span class="esconder2">al Carrito</span></span>
+            </a>
+        </div>    
+        <ul class="ul2">
+            <li><span class="material-icons">
+                done
+                </span>Color - Blanco</li>
+            <li><span class="material-icons">
+                done
+                </span>Conectividad - Conexión integrada de altavoz mono y audífonos</li>
+            <li><span class="material-icons">
+                done
+                </span>Entradas - Puerto de extensión, USB (Micro B) conector de auriculares estéreo USB</li>
+            <li><span class="material-icons">
+                done
+                </span>Sensor de Movimiento - Sistema de detección de movimiento de seis ejes</li>
+              
+        </ul>
+        </div>
+        <div class="borde_in">
+        <h3 class="col-2 col-m-12"><img src="games/games9.png" class="img1"></h3>
+        <h4>Sony Control Dualshock 4 Negro</h4>
+        <h2 class="precio">L. 2,995.00</h2>
+        <div class="compra"><a href="#" class="e1"><span class="material-icons">
+            shopping_cart
+            </span><span class="espaciado esconder">_</span><span class="esconder">Agregar <span class="esconder2">al Carrito</span></span>
+            </a>
+        </div>    
+        <ul class="ul2">
+            <li><span class="material-icons">
+                done
+                </span>Color - Negro</li>
+            <li><span class="material-icons">
+                done
+                </span>Conectividad - Conexión integrada de altavoz mono y audífonos</li>
+            <li><span class="material-icons">
+                done
+                </span>Entradas - Puerto de extensión, USB (Micro B) conector de auriculares estéreo USB</li>
+            <li><span class="material-icons">
+                done
+                </span>Sensor de Movimiento - Sistema de detección de movimiento de seis ejes</li>
+              
+        </ul>
+        </div>
+        <div>
+        <h3 class="col-2 col-m-12"><img src="games/games10.png" class="img1"></h3>
+        <h4>Sony Control Dualshock 4 Verde Militar</h4>
+        <h2 class="precio">L. 2,995.00</h2>
+        <div class="compra"><a href="#" class="e1"><span class="material-icons">
+            shopping_cart
+            </span><span class="espaciado esconder">_</span><span class="esconder">Agregar <span class="esconder2">al Carrito</span></span>
+            </a>
+        </div>    
+        <ul class="ul2">
+            <li><span class="material-icons">
+                done
+                </span>Color - Verde Militar</li>
+            <li><span class="material-icons">
+                done
+                </span>Conectividad - Conexión integrada de altavoz mono y audífonos</li>
+            <li><span class="material-icons">
+                done
+                </span>Entradas - Puerto de extensión, USB (Micro B) conector de auriculares estéreo USB</li>
+            <li><span class="material-icons">
+                done
+                </span>Sensor de Movimiento - Sistema de detección de movimiento de seis ejes</li>
+              
+        </ul>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
